@@ -56,6 +56,7 @@ public class SubjectCategories_StepDefinitions {
 
     @And("I Click on Edit button On the displayed Subject Category")
     public void iClickOnEditButtonOnTheDisplayedSubjectCategory() {
+        hp.wait(2);
         hp.clickMethod(hp.getEditSubjectButton());
     }
 
@@ -93,6 +94,7 @@ public class SubjectCategories_StepDefinitions {
 
     @And("I Click on Delete button On the displayed Subject Category")
     public void iClickOnDeleteButtonOnTheDisplayedSubjectCategory() {
+        hp.wait(2);
         hp.clickMethod(hp.getDeleteButtonAfterSearch());
     }
 

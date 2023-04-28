@@ -113,7 +113,7 @@ public class OgunSteps {
     @Then("User will see success message about delete")
     public void userWillSeeSuccessMessageAboutDelete() {
         elements.wait.until(ExpectedConditions.invisibilityOf(elements.getNationalityDeletedMessage()));
-        elements.verifyContainsText(elements.getAlreadyExistMessage(),"deleted");
+        elements.verifyContainsText(elements.getSuccessMessage(),"successfully");
         //Assert.assertTrue(elements.getDeleteConfirmationButton().isDisplayed());
     }
 
@@ -122,5 +122,10 @@ public class OgunSteps {
         elements.wait.until(ExpectedConditions.invisibilityOf(elements.getNoDataDisplayMessage()));
         elements.verifyContainsText(elements.getNoDataDisplayMessage(),"no data");
         //Assert.assertTrue(elements.getNoDataDisplayMessage().isDisplayed());
+    }
+
+    @And("I write Nationality updated name on the name text box to search")
+    public void iWriteNationalityUpdatedNameOnTheNameTextBoxToSearch() {
+        elements.sendKeysMethod(elements.getNationalitySearchBox(),"Turkish34");
     }
 }

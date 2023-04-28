@@ -58,6 +58,12 @@ public class OgunPage extends MyMethods {
     @FindBy(xpath = "//span[contains(text(),'Delete')]")
     private WebElement deleteConfirmationButton;
 
+    @FindBy(xpath = "//div[contains(text(),'successfully')]")
+    private WebElement successMessage;
+
+    public WebElement getSuccessMessage() {
+        return successMessage;
+    }
 
     public WebElement getSetupButton() {return setupButton;
     }

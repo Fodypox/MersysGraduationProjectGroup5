@@ -115,12 +115,12 @@ public class ShtefansSteps extends MyMethods {
     @And("Admin gives the name which already exists")
     public void adminGivesTheNameWhichAlreadyExists() {
 
-        sp.clickMethod(sp.getAddNewAttestationButton());
+        /*sp.clickMethod(sp.getAddNewAttestationButton());
         sp.sendKeysMethod(sp.getNameBoxAtAddNewAttestation(), "ShtefansNegativeTestCaseCheck");
         sp.clickMethod(sp.getSaveBtnAtAddNewAttestation());
         wait(2);
         BasicDriver.getDriver().navigate().refresh();
-        wait(2);
+        wait(2);*/
         sp.clickMethod(sp.getAddNewAttestationButton());
         sp.sendKeysMethod(sp.getNameBoxAtAddNewAttestation(), "ShtefansNegativeTestCaseCheck");
         sp.clickMethod(sp.getSaveBtnAtAddNewAttestation());

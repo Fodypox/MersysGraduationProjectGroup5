@@ -1,4 +1,4 @@
-Feature: Position Categories
+Feature: Location
 
   Background:
     Given Navigate to Campus
@@ -49,7 +49,7 @@ Feature: Position Categories
 
 
                                      #5
-  Scenario:
+  Scenario: Admin should not be able to create new location without name
     When  Admin click Setup button
     When Admin click School Setup  button
     When Admin click Locations button

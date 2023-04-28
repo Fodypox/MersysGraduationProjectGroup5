@@ -11,13 +11,13 @@ public class ShtefansPOM extends MyMethods {
         PageFactory.initElements(BasicDriver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//span[@class='nav-link-title ng-tns-c111-17 ng-star-inserted']")
+    @FindBy(xpath = "//span[text()='Human Resources']")
     private WebElement humanResourcesMenuBtn;
 
-    @FindBy(xpath = "//span[@class='nav-link-title ng-tns-c111-18 ng-star-inserted']")
+    @FindBy(xpath = "(//span[text()='Setup'])[3]")
     private WebElement setupUnderHRBtn;
 
-    @FindBy(xpath = "//span[normalize-space()='Attestations']")
+    @FindBy(xpath = "//span[text()='Attestations']")
     private WebElement attestationsUnderHRBtn;
 
     @FindBy(xpath = "//input[@id='ms-text-field-0']")

@@ -13,9 +13,9 @@ public class DouaPage extends MyMethods {
         PageFactory.initElements(BasicDriver.getDriver(), this);
     }
 
-    @FindBy(xpath = "(//span[@class='nav-link-title ng-tns-c111-7 ng-star-inserted'])[1]")
+    @FindBy(xpath = "(//span[text()='Setup'])[1]")
     WebElement setupMenu;
-    @FindBy(xpath = "(//span[@class='nav-link-title ng-tns-c111-8 ng-star-inserted'])[1]")
+    @FindBy(xpath = "//span[text()='Parameters']")
     WebElement parametersMenu;
     @FindBy(xpath = "//span[normalize-space()='Grade Levels']")
     WebElement gradesLevelMenu;
@@ -27,7 +27,7 @@ public class DouaPage extends MyMethods {
     WebElement shortNameField;
     @FindBy(xpath = "(//input[@id='ms-text-field-2'])[1]")
     WebElement orderField;
-    @FindBy(xpath = "//button[@class='mat-focus-indicator mat-tooltip-trigger mat-accent mat-button mat-raised-button mat-button-base ng-star-inserted']")
+    @FindBy(xpath = "//span[text()='Save']")
     WebElement saveButton;
     @FindBy(xpath = "(//div[@class='mat-form-field-infix ng-tns-c12-50'])[1]")
     WebElement filters;
@@ -70,7 +70,7 @@ public class DouaPage extends MyMethods {
 
     public void inputtingGradeInformation() {
         nameField.click();
-        nameField.sendKeys("jack");
+        nameField.sendKeys("jack1");
         shortNameField.click();
         shortNameField.sendKeys("jk");
         orderField.click();

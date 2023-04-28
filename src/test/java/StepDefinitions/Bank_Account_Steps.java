@@ -107,8 +107,8 @@ public class Bank_Account_Steps {
 
     public void findAccount() {
         ba.sendKeysMethod(ba.getNameInSearch(), "edua");
-        ba.clickMethod(ba.getCurrencyInSearch());
-        ba.clickMethod(ba.getEurInSearchCurrency());
+//        ba.clickMethod(ba.getCurrencyInSearch());
+//        ba.clickMethod(ba.getEurInSearchCurrency());
         ba.clickMethod(ba.getSearchButtonAnderBankAccount());
     }    // Find bank account step.
 

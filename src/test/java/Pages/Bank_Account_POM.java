@@ -41,19 +41,19 @@ public class Bank_Account_POM extends MyMethods {
     @FindBy(css = "svg[class='svg-inline--fa fa-plus']")
     private WebElement plusButton;
 
-    @FindBy(xpath = "//ms-text-field[@formcontrolname='name']")
+    @FindBy(xpath = "(//input[@data-placeholder='Name'])[2]")
     private WebElement nameInPlats;
 
     @FindBy(xpath = "//input[@id='ms-text-field-4']")
     private WebElement nameInPlats2;
 
-    @FindBy(xpath = "//ms-text-field[@formcontrolname='iban']")
+    @FindBy(xpath = "//input[@data-placeholder='IBAN']")
     private WebElement ibanInPlats;
 
     @FindBy(xpath = "//input[@id='ms-text-field-5']")
     private WebElement ibanInPlat2;
 
-    @FindBy(xpath = "//input[@data-placeholder=\"Integration Code\"]")
+    @FindBy(xpath = "//input[@data-placeholder='Integration Code']")
     private WebElement integrationCodeInPlats;
 
     @FindBy(xpath = "//input[@id='ms-text-field-6']")
@@ -77,7 +77,7 @@ public class Bank_Account_POM extends MyMethods {
     @FindBy(xpath = "//div[text()='The Bank Account with IBAN \"PA78\" already exists.']")
     private WebElement warningMessage;
 
-    @FindBy(xpath = "//input[@id='ms-text-field-0']")
+    @FindBy(xpath = "//input[@data-placeholder='Name']")
     private WebElement nameInSearch;
 
     @FindBy(xpath = "//div[@id='mat-select-value-3']")
