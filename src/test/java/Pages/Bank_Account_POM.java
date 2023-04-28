@@ -41,25 +41,25 @@ public class Bank_Account_POM extends MyMethods {
     @FindBy(css = "svg[class='svg-inline--fa fa-plus']")
     private WebElement plusButton;
 
-    @FindBy(xpath = "//input[@id='ms-text-field-1']")
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='name']")
     private WebElement nameInPlats;
 
     @FindBy(xpath = "//input[@id='ms-text-field-4']")
     private WebElement nameInPlats2;
 
-    @FindBy(xpath = "//input[@id='ms-text-field-2']")
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='iban']")
     private WebElement ibanInPlats;
 
     @FindBy(xpath = "//input[@id='ms-text-field-5']")
     private WebElement ibanInPlat2;
 
-    @FindBy(xpath = "//input[@id='ms-text-field-3']")
+    @FindBy(xpath = "//input[@data-placeholder=\"Integration Code\"]")
     private WebElement integrationCodeInPlats;
 
     @FindBy(xpath = "//input[@id='ms-text-field-6']")
     private WebElement integrationCodeInPlat2;
 
-    @FindBy(xpath = "//div[@id='mat-select-value-7']")
+    @FindBy(xpath = "(//span[text()='Currency'])[3]")
     private WebElement currencyInPlats;
 
     @FindBy(xpath = "//div[@id='mat-select-value-9']")

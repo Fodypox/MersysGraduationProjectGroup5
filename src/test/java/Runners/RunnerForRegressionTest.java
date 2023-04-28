@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = {"src/test/java/Features/AslanbekPositionCategories.feature",
+        features = {"src/test/java/Features/PositionCategories.feature",
         "src/test/java/Features/Bank_Account.feature",
         "src/test/java/Features/Nur.feature",
         "src/test/java/Features/YusufEmployeePosition.feature"},
